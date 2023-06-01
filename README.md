@@ -8,6 +8,8 @@ You need to fix the following files:
 
 You need to set your API key!
 
+*DONE
+
 ### `./index.js` and `./components/index.js`
 
 First, the imports at the top of our root `index.js` won't work, since they aren't actually exported from `./components/index.js`. Go add 5 re-exports to that file.
@@ -18,9 +20,13 @@ export { default as ExportName } from './FileName';
 
 Also, we haven't used ReactDOM.render at the bottom of our main `index.js`! That allows the app to be "bootstrapped" into running inside our browser.
 
+*** DONE!
+
 ### `./components/Title.js` and `./components/Loading.js`
 
 These are just two tiny components that you need to create. They don't rely on any props, just some static HTML that is giving to you inside those files. Make and export the components so that our re-exports from `./components/index.js` work as expected.
+
+**  DONE! **
 
 ## Part 2 - Bigger Components
 
@@ -30,6 +36,8 @@ You now need to build out the `<App />` component based on the comments in the f
 
 - use `useState` to create getters and setters with good default values
 - pass the getters and setters to every component that needs them
+
+**done!**
 
 ### `./components/Search.js`
 
@@ -41,6 +49,8 @@ This file needs a ton of work, but thankfully the parts you need to do are comme
 - Finish the useEffect to get the centuryList and classificationList
 - Update the template to create the correct options for the two dropdowns
 
+**done!**
+
 ### `./components/Preview.js`
 
 This file also needs your help! 
@@ -50,6 +60,8 @@ This file also needs your help!
 - Hook up the previous and next buttons with what's in info: `info.prev` and `info.next` will be super useful both for the disabled attribute as well as the onClick function
 - Build a map function for the rendering of `searchResults` passed in as a prop from `<App />`
 - That rendering should also include an `onClick` which calls `setFeaturedResult` equal to the current record being iterated over in the map
+
+**DONE!**
 
 ### `./components/Feature.js`
 
